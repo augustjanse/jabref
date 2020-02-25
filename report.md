@@ -63,6 +63,10 @@ For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
 30 minutes.
 
+## Some problems we have encountered
+1. The problem with storing the API
+2. When requesting the key from Worldcat, the authority is not instantly delivered.
+
 ## Overall experience
 
 What are your main take-aways from this project? What did you learn?

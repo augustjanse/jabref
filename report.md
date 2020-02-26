@@ -1,9 +1,5 @@
 # Report for assignment 4
 
-This is a template for your report. You are free to modify it as needed.
-It is not required to use markdown for your report either, but the report
-has to be delivered in a standard, cross-platform format.
-
 ## Project
 
 **Name**: [JabRef Bibliography Management](https://github.com/JabRef/jabref)
@@ -65,7 +61,8 @@ you took care of and where you spent your time, if that time exceeds
 
 ## Some problems we have encountered
 1. The problem with storing the API
-2. When requesting the key from Worldcat, the authority is not instantly delivered.
+2. When requesting the key from Worldcat, the authority is not instantly delivered/denied.
+3. When we first run the original project using ./gradlew test, the build fails and 9 test cases failed.
 
 ## Overall experience
 

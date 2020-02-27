@@ -104,15 +104,9 @@ Before I could start contributing by coding I had to analyze the existing fetche
 
 ## The benefits, drawbacks, and limitations of our work carried out
 
-<<<<<<< HEAD
 ### limitation
 
 The limitation we experienced was that we all have different educational background, and therefor not equally ... when it comes working on larger open source project. However, this was converted into an advantage for this assignment.
-=======
-### benefit
-### Drawback
-
->>>>>>> 5842faee2a9563f217b53bb9bc67da4e9729f0ef
 
 ### benefit
 

@@ -80,6 +80,9 @@ August:
 
 After that I started writing actual code. Organizational and team activities not included.
 
+## the benefits, drawbacks, and limitations of our work carried out
+
+
 ## Some problems we have encountered
 1. The problem with storing the API
 2. When requesting the key from Worldcat, the authority is not instantly delivered/denied.

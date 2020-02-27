@@ -46,9 +46,16 @@ It was then manually tested in the GUI to ensure that it causes no unexpected pr
 ### Existing test cases relating to refactored code
 
 ### Test results
+We found that the current test suite is kind of volatile.
 
-Overall results with link to a copy or excerpt of the logs (before/after
-refactoring).
+The following tests are run on a clean (`git clean -xfd`) repo on the last commit before branching:
+https://github.com/augustjanse/jabref/blob/report/cleaned
+
+They all succeed. When trying the first time on the last commit of the branch, an unrelated test failed:
+https://github.com/augustjanse/jabref/blob/report/aps-cleaned
+
+However, cleaning and running again gave no errors:
+https://github.com/augustjanse/jabref/blob/report/aps-cleaned2
 
 ### Patch/fix
 

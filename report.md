@@ -77,7 +77,7 @@ We believe that it is likely for the fetchers to be implemented.
 | Adam  		  | - | - | - | - | - | - | - | - | - |
 | August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 28 |
 | Glenn        	  | - | - | - | - | - | - | - | - | - |
-| Roger 		  | 1 | 1 | 6 | 4 | 3 | 10 | 0 | 0 | 25 |
+| Roger 		  | 3 | 1 | 6 | 4 | 3 | 8 | 0 | 0 | 25 |
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
@@ -105,6 +105,8 @@ I use other time to read the documentation of whole project and tried to undeers
 ## The benefits, drawbacks, and limitations of our work carried out
 
 ### benefit
+### Drawback
+
 
 
 

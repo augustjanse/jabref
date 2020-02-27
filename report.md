@@ -79,8 +79,8 @@ We believe that it is likely for the fetchers to be merged into the master branc
 |                 | Disc/Meeting | Disc/Meeting within parts of group| Reading documentation | Config/Setup | Analyzing |Writing doc | Coding| Running code | Total |
 |-----------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Adam  		  | 3 | 2 | 4 | 2 | 5 | 6 | 5 | 0.5 | 26.5 |
-| August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 29 |
-| Glenn        	  | 1 | 2 | 3 | 2 | 1 | 1 | 16 | 1 | 28 |
+| August          | 3 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 31 |
+| Glenn        	  | 3 | 2 | 3 | 2 | 1 | 1 | 16 | 1 | 30 |
 | Roger 		  | 3 | 1 | 6 | 4 | 3 | 8 | 0 | 0 | 25 |
 
 <!-- (For setting up tools and libraries (step 4), enumerate all dependencies you took care of and where you spent your time, if that time exceeds 30 minutes.) -->

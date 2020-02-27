@@ -1,4 +1,6 @@
 ## Architecture and purpose of the system:
+*Note: This text is largely paraphrased from the referenced link. We do not claim it as an original work.*
+
 ### Description:
 JabRef is an open-source, cross-platform citation and reference management tool. It helps to collect and organize sources, find relevant papers and explore researches. It's a cross-platform apllication which is available for Windows, Linux and Mac OS X.
 

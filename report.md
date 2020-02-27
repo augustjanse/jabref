@@ -113,6 +113,25 @@ I use other time to read the documentation of whole project and tried to undeers
 
 Before I could start contributing by coding I had to analyze the existing fetchers and overall code to get an understanding on how it should be implemented and this took quite the time. I found that the project in terms of coding was complex, and therefor it was difficult for me to make any progress. Since the coding was less of an issue for other group members I could distribute my time to other tasks such as documentation and analyzing. 
 
+Optional (point 6): How would you put your work in context with best software engineering practice?
+
+### The benefits, drawbacks, and limitations of our work carried out
+
+### Limitations
+The limitation we experienced was that we all have different educational background and therefor not equally prepared when it comes to working on larger open source project. However, this was converted into an advantage for this assignment.
+
+Also One of the fetchers we implement, the Worldcat requires the authorized key to access the document.We failed to get the key unfortunately. It might not be free for users and may incur costs.
+
+### Drawback
+The APS fetcher we implement could only find PDFs that are only available elsewhere. It increases the maintenance cost without good reason. 
+
+Also one of the fetchers we implement, the Worldcat, requires the authorized key to access the document. We failed to get the key unfortunately. It might not be free for users and may incur costs.
+
+### Benefit
+We believe that the distribution of our time was well organized for this assignment. The advantage of having members in the group with broader experience when it comes to working on larger open-source projects was utilized well. Every member had a part in making this assignment successfull. We believe that the learning experience of working in a group with different backgrounds have prepared us well for future group assignments, both as students and later as professionals.
+
+Our work also maintains the current software system and did not change the current architecture but enrich the content and increase the fetchers to allow the system have access to more fetchers like Worldcat and APS, providing the users more options for their research. It should be easy to maintain.  
+
 
 ## Some problems we have encountered
 **Problems with Worldcat-fetcher:**
@@ -139,26 +158,6 @@ Glenn has some trouble understanding the purpose of the importers and what was m
 The biggest take-away is how hard it can be to familiarize oneself with a big project like this, and how important documentation really is. It is basically impossible to understand how everything in the project is connected in such a small amount of time, and tough to know what to look at.
 
 However we all feel that it was a really good experience, reading other peoples code and trying to understand what they want with an issue. 
-
-Optional (point 6): How would you put your work in context with best software engineering practice?
-
-## The benefits, drawbacks, and limitations of our work carried out
-
-### Limitations
-The limitation we experienced was that we all have different educational background and therefor not equally prepared when it comes to working on larger open source project. However, this was converted into an advantage for this assignment.
-
-Also One of the fetchers we implement, the Worldcat requires the authorized key to access the document.We failed to get the key unfortunately. It might not be free for users and may incur costs.
-
-### Drawback
-The APS fetcher we implement could only find PDFs that are only available elsewhere. It increases the maintenance cost without good reason. 
-
-Also one of the fetchers we implement, the Worldcat, requires the authorized key to access the document. We failed to get the key unfortunately. It might not be free for users and may incur costs.
-
-### Benefit
-We believe that the distribution of our time was well organized for this assignment. The advantage of having members in the group with broader experience when it comes to working on larger open-source projects was utilized well. Every member had a part in making this assignment successfull. We believe that the learning experience of working in a group with different backgrounds have prepared us well for future group assignments, both as students and later as professionals.
-
-Our work also maintains the current software system and did not change the current architecture but enrich the content and increase the fetchers to allow the system have access to more fetchers like Worldcat and APS, providing the users more options for their research. It should be easy to maintain.  
-
 
 Optional (point 7): Is there something special you want to mention here?
 

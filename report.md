@@ -71,7 +71,7 @@ We believe that it is likely for the fetchers to be merged into the master branc
 | Adam  		  | - | 2 | - | - | - | - | - | - | - |
 | August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 28 |
 | Glenn        	  | - | 2 | - | - | - | - | - | - | - |
-| Roger 		  | 1 | 1 | 6 | 4 | 3 | 10 | 0 | 0 | 25 |
+| Roger 		  | 3 | 1 | 6 | 4 | 3 | 8 | 0 | 0 | 25 |
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
@@ -104,9 +104,15 @@ Before I could start contributing by coding I had to analyze the existing fetche
 
 ## The benefits, drawbacks, and limitations of our work carried out
 
+<<<<<<< HEAD
 ### limitation
 
 The limitation we experienced was that we all have different educational background, and therefor not equally ... when it comes working on larger open source project. However, this was converted into an advantage for this assignment.
+=======
+### benefit
+### Drawback
+
+>>>>>>> 5842faee2a9563f217b53bb9bc67da4e9729f0ef
 
 ### benefit
 

@@ -38,22 +38,32 @@ Our changes are purely expanding existing functionality. Therefore, no API chang
 
 The requirements on the environment that the GUI is properly connected to the logic that calls our classes the proper way. This is assumed to be correctly implemented already.
 
-Optional (point 3): trace tests to requirements.
+Optional (point 3): trace tests to requirements.  
 The APS fetcher was unit tested to see that it behaves as expected both when finding PDFs and when not (1, 3): https://github.com/JabRef/jabref/pull/6026/files#diff-05a59d2bfd3fd710df528c3327a23e03
 It was then manually tested in the GUI to ensure that it causes no unexpected problems (3).
 
-### Existing test cases relating to refactored code
+### Implemented test cases and results
 
-### Test results
+We found that the current test suite is kind of volatile.
 
-All the implemented test case for the functions are available in the following commits:  
+The following tests are run on a clean (`git clean -xfd`) repo on the last commit before branching:
+https://github.com/augustjanse/jabref/blob/report/cleaned
+
+They all succeed. When trying the first time on the last commit of the branch, an unrelated test failed:
+https://github.com/augustjanse/jabref/blob/report/aps-cleaned
+
+However, cleaning and running again gave no errors:
+https://github.com/augustjanse/jabref/blob/report/aps-cleaned2
+
+### Test case commits
+All the implemented test cases for the functions are available in the following commits:  
 APS: [`5ba23c7`](https://github.com/augustjanse/jabref/commit/5ba23c741ce1eecad7690a69de1c8c99fefd5206)  
 Worldcat: [`649b26e`](https://github.com/augustjanse/jabref/commit/649b26ee289ee4d197541ebe5a4aa139fbdb49cd)  
 Worldcat: [`961a20e`](https://github.com/augustjanse/jabref/commit/961a20ec6f15a9d3cf91e1b2e0b09bb244ef6caa)  
 
-To execute the test cases, run the following command: `./gradlew run`.
+To execute the test cases, use the following command: `./gradlew run`.
 
-### Patch/fix
+### Patch/fix/pull request
 
 The pull request are available at the following links:  
 [`APS-fetcher`](https://github.com/JabRef/jabref/pull/6026)  
@@ -73,11 +83,8 @@ We believe that it is likely for the fetchers to be merged into the master branc
 | Glenn        	  | - | 2 | - | - | - | - | - | - | - |
 | Roger 		  | 3 | 1 | 6 | 4 | 3 | 8 | 0 | 0 | 25 |
 
-For setting up tools and libraries (step 4), enumerate all dependencies
-you took care of and where you spent your time, if that time exceeds
-30 minutes.
-
-Description of time distribution, in hours:
+<!-- (For setting up tools and libraries (step 4), enumerate all dependencies you took care of and where you spent your time, if that time exceeds 30 minutes.) -->
+### Description of time distribution, in hours:
 
 `August`:
 
@@ -98,7 +105,7 @@ I use other time to read the documentation of whole project and tried to undeers
 
 `Adam`:
 
-Before I could start contributing by coding I had to analyze the existing fetchers and overall code to get an understanding on how it should be implemented, this took quite the time. I found that the project in terms of coding was complex, and therefor it was difficult for me to make any progress. Since the coding was less of an issue for other group members I could distribute my time to other tasks such as documentation and analyzing. 
+Before I could start contributing by coding I had to analyze the existing fetchers and overall code to get an understanding on how it should be implemented and this took quite the time. I found that the project in terms of coding was complex, and therefor it was difficult for me to make any progress. Since the coding was less of an issue for other group members I could distribute my time to other tasks such as documentation and analyzing. 
  
 `Glenn`:
 
@@ -106,22 +113,21 @@ Before I could start contributing by coding I had to analyze the existing fetche
 
 ### limitation
 
-The limitation we experienced was that we all have different educational background, and therefor not equally ... when it comes working on larger open source project. However, this was converted into an advantage for this assignment.
+The limitation we experienced was that we all have different educational background and therefor not equally prepared when it comes to working on larger open source project. However, this was converted into an advantage for this assignment.
 
 ### benefit
 
 We believe that the distribution of our time was well organized for this assignment. The advantage of having members in the group with broader experience when it comes to working on larger open-source projects was utilized well. Every member had a part in making this assignment successfull. We believe that the learning experience of working in a group with different backgrounds have prepared us well for future group assignments, both as students and later as professionals.
 
 ## Some problems we have encountered
-1. The problem with storing the API
-2. When requesting the key from Worldcat, the authority is not instantly delivered/denied.
-3. When we first run the original project using ./gradlew test, the build fails and 9 test cases failed.
-
 Problems with Worldcat-fetcher:
 
 We had trouble obtaining a key for the Worldcat Search API. Keys can only be obtained by libraries that maintain Worldcat discovery and/or OCLC Cataloging subscriptions. One of these libraries are the KTH-library, but unfortunetly when we contacted them they couldnt help us with our issue. KTH IT-support was also contacted but couldnt provide any help.
 
 In the comment section of the issue we made a request to the admins to check if they could provide a sandbox-key for testing, their response was to obtain one by ourselves.
+
+Other problems:
+One test case failed for some of the group members. However this did now effect our workflow.
 
 ## Overall experience
 August found an assignment that seemed appropriate. Our issue was a composite issue of many fetcher issues. We aimed to fix both remaining.
@@ -132,8 +138,8 @@ Because it was difficult to divide work on one fetcher, we decided to work separ
 
 After all that struggle, August sent a pull request which he thought looked pretty good. The maintainer replied with a ton of problems, that were fixed. That was an interesting experience.
 
-What are your main take-aways from this project? What did you learn?
+## What are your main take-aways from this project? What did you learn?
 
-Optional (point 6): How would you put your work in context with best software engineering practice?
+## Optional (point 6): How would you put your work in context with best software engineering practice?
 
-Optional (point 7): Is there something special you want to mention here?
+## Optional (point 7): Is there something special you want to mention here?

@@ -12,7 +12,7 @@ August had no problem at all building on his machine. The build does produce a l
 **Did it build and run as documented?**
 
 The application did run correctly without any problems. However there was one test case that failed for the members in our group
-who were using Mac OS Catalina as their operating system. This issue was resolved by ignoring to run the specific test case causing the failure. We did find some documentation regarding the same issue from other contributors to the project, it does not seem to be unique for our situation.
+who were using Mac OS Catalina as their operating system. This issue was resolved by ignoring to run the specific test case causing the failure. We did find some documentation regarding the same issue from other contributors to the project, so it does not seem to be unique for our situation.
 
 ## UML class diagram and its description
 
@@ -38,89 +38,79 @@ Our changes are purely expanding existing functionality. Therefore, no API chang
 
 The requirements on the environment that the GUI is properly connected to the logic that calls our classes the proper way. This is assumed to be correctly implemented already.
 
-Optional (point 3): trace tests to requirements.  
+Optional (point 3): trace tests to requirements.
 The APS fetcher was unit tested to see that it behaves as expected both when finding PDFs and when not (1, 3): https://github.com/JabRef/jabref/pull/6026/files#diff-05a59d2bfd3fd710df528c3327a23e03
 It was then manually tested in the GUI to ensure that it causes no unexpected problems (3).
 
-### Implemented test cases and results
 
-We found that the current test suite is kind of volatile.
+### Existing test cases relating to refactored code
 
-The following tests are run on a clean (`git clean -xfd`) repo on the last commit before branching:
-https://github.com/augustjanse/jabref/blob/report/cleaned
+### Test results
 
-They all succeed. When trying the first time on the last commit of the branch, an unrelated test failed:
-https://github.com/augustjanse/jabref/blob/report/aps-cleaned
+Overall results with link to a copy or excerpt of the logs (before/after
+refactoring).
 
-However, cleaning and running again gave no errors:
-https://github.com/augustjanse/jabref/blob/report/aps-cleaned2
-
-### Test case commits
-All the implemented test cases for the functions are available in the following commits:  
+All the implemented test case for the functions are available in the following commits:  
 APS: [`5ba23c7`](https://github.com/augustjanse/jabref/commit/5ba23c741ce1eecad7690a69de1c8c99fefd5206)  
 Worldcat: [`649b26e`](https://github.com/augustjanse/jabref/commit/649b26ee289ee4d197541ebe5a4aa139fbdb49cd)  
 Worldcat: [`961a20e`](https://github.com/augustjanse/jabref/commit/961a20ec6f15a9d3cf91e1b2e0b09bb244ef6caa)  
 
-To execute the test cases, use the following command: `./gradlew run`.
+For executing the test cases use run following comman: `./gradlew run`.
 
-### Patch/fix/pull request
+### Patch/fix
 
-The pull request are available at the following links:  
+The the pull request are available at the following links:  
 [`APS-fetcher`](https://github.com/JabRef/jabref/pull/6026)  
 [`Worldcat-fetcher`](https://github.com/JabRef/jabref/pull/6035)
 
-The pull request for APS-fetcher have already received feedback, for which actions have been taken to enable the pull request to get accepted. Unfortunetly feedback has not yet been received regarding the pull request for the Worldcat-fetcher.
+The pull request for APS-fetcher have already received feedback, for which actions have been taken to enable the pull request to get accepted.
 
-We believe that it is likely for the fetchers to be merged into the master branch.
+Unfortunately feedback has not yet been received regarding the pull request for the Worldcat-fetcher.
+
+We believe that it is likely for the fetchers to be implemented.
 
 
 ## Effort spent
 
 |                 | Disc/Meeting | Disc/Meeting within parts of group| Reading documentation | Config/Setup | Analyzing |Writing doc | Coding| Running code | Total |
 |-----------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Adam  		  | - | 2 | - | - | - | - | - | - | - |
-| August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 29 |
-| Glenn        	  | 1 | 2 | 3 | 2 | 1 | 1 | 16 | 1 | 28 |
+| Adam  		  | - | - | - | - | - | - | - | - | - |
+| August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 28 |
+| Glenn        	  | - | - | - | - | - | - | - | - | - |
 | Roger 		  | 3 | 1 | 6 | 4 | 3 | 8 | 0 | 0 | 25 |
 
-<!-- (For setting up tools and libraries (step 4), enumerate all dependencies you took care of and where you spent your time, if that time exceeds 30 minutes.) -->
-### Description of time distribution, in hours:
+For setting up tools and libraries (step 4), enumerate all dependencies
+you took care of and where you spent your time, if that time exceeds
+30 minutes.
 
-`August`:
+In hours:
 
-1: Trying to get GitHub Actions working for the repo  
-1: Look into keys. Realized the way they're doing it is probably breaking terms.  
-1: Start looking at APS since Worldcat is being handled. Realized we cannot use any private keys, so implement what can be done without. Tried to find an APS article that cannot be found already, but failed.  
-1: Looking at other FulltextFetchers for APS.  
+August:
+
+1: Trying to get GitHub Actions working for the repo
+1: Look into keys. Realized the way they're doing it is probably breaking terms.
+1: Start looking at APS since Worldcat is being handled. Realized we cannot use any private keys, so implement what can be done without. Tried to find an APS article that cannot be found already, but failed.
+1: Looking at other FulltextFetchers for APS.
 
 After that I started writing actual code. Organizational and team activities not included.
 
-`Glenn`:
+Roger:
 
-1: Installing JDK13 and running tests
-1: Looking at Worldcat keys and keys in project
-
-Other than that I spent most time understanding what to write and writing that. A lot of was spent on understanding the system, how everything was connected
-
-`Roger`:
-
-1:Look into the worldcat fetcher and and attempt to get the keys.  
-3:Read the code written by teammates to prepare for the documentation and UML diagram drawing  
-4:Learning th new knowledge that is unfamiliar to me, such as how to draw the UML diagram, SEMAT kernel and different layers and methods used in developing the fetchers.  
+1:Look into the worldcat fetcher and and attempt to get the keys.
+3:Read the code written by teammates to prepare for the documentation and UML diagram drawing
+4:Learning th new knowledge that is unfamiliar to me, such as how to draw the UML diagram, SEMAT kernel and different layers and methods used in developing the fetchers.
 
 I use other time to read the documentation of whole project and tried to undeerstand their approach.Also, I tries to draw a graph for the architecture to make the whole structure of this project more clear and visible. 
-
-`Adam`:
-
-Before I could start contributing by coding I had to analyze the existing fetchers and overall code to get an understanding on how it should be implemented and this took quite the time. I found that the project in terms of coding was complex, and therefor it was difficult for me to make any progress. Since the coding was less of an issue for other group members I could distribute my time to other tasks such as documentation and analyzing. 
- 
-`Glenn`:
 
 ## The benefits, drawbacks, and limitations of our work carried out
 
 ### Limitations
-
 The limitation we experienced was that we all have different educational background and therefor not equally prepared when it comes to working on larger open source project. However, this was converted into an advantage for this assignment.
+
+Also One of the fetchers we implement, the Worldcat requires the authorized key to access the document.We failed to get the key unfortunately. It might not be free for users and may incur costs.
+
+### Drawback
+The APS fetcher we implement could only find PDFs that are only available elsewhere. It increases the maintenance cost without good reason. 
 
 Also one of the fetchers we implement, the Worldcat, requires the authorized key to access the document. We failed to get the key unfortunately. It might not be free for users and may incur costs.
 
@@ -133,14 +123,16 @@ Our work also maintains the current software system and did not change the curre
 The APS fetcher we implement could only find PDFs that are only available elsewhere. It increases the maintenance cost without good reason. 
 
 ## Some problems we have encountered
-**Problems with Worldcat-fetcher:**
+1. The problem with storing the API
+2. When requesting the key from Worldcat, the authority is not instantly delivered/denied.
+3. When we first run the original project using ./gradlew test, the build fails and 9 test cases failed.
+
+
+Problems with Worldcat-fetcher:
 
 We had trouble obtaining a key for the Worldcat Search API. Keys can only be obtained by libraries that maintain Worldcat discovery and/or OCLC Cataloging subscriptions. One of these libraries are the KTH-library, but unfortunetly when we contacted them they couldnt help us with our issue. KTH IT-support was also contacted but couldnt provide any help.
 
 In the comment section of the issue we made a request to the admins to check if they could provide a sandbox-key for testing, their response was to obtain one by ourselves.
-
-**Other problems**:  
-One test case failed for some of the group members. However this did now effect our workflow.
 
 ## Overall experience
 August found an assignment that seemed appropriate. Our issue was a composite issue of many fetcher issues. We aimed to fix both remaining.
@@ -158,6 +150,6 @@ The biggest take-away is how hard it can be to familiarize oneself with a big pr
 
 However we all feel that it was a really good experience, reading other peoples code and trying to understand what they want with an issue. 
 
-## Optional (point 6): How would you put your work in context with best software engineering practice?
+Optional (point 6): How would you put your work in context with best software engineering practice?
 
-## Optional (point 7): Is there something special you want to mention here?
+Optional (point 7): Is there something special you want to mention here?

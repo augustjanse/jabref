@@ -7,6 +7,7 @@
 **Description**: JabRef is an open-source, cross-platform citation and reference management tool.
 
 ## Onboarding experience
+August had no problem at all building on his machine. The build does produce a lot of frightening warnings, though.
 
 **Did it build and run as documented?**
 
@@ -45,6 +46,16 @@ It was then manually tested in the GUI to ensure that it causes no unexpected pr
 ### Existing test cases relating to refactored code
 
 ### Test results
+We found that the current test suite is kind of volatile.
+
+The following tests are run on a clean (`git clean -xfd`) repo on the last commit before branching:
+https://github.com/augustjanse/jabref/blob/report/cleaned
+
+They all succeed. When trying the first time on the last commit of the branch, an unrelated test failed:
+https://github.com/augustjanse/jabref/blob/report/aps-cleaned
+
+However, cleaning and running again gave no errors:
+https://github.com/augustjanse/jabref/blob/report/aps-cleaned2
 
 All the implemented test case for the functions are available in the following commits:  
 APS: [`5ba23c7`](https://github.com/augustjanse/jabref/commit/5ba23c741ce1eecad7690a69de1c8c99fefd5206)  
@@ -52,7 +63,6 @@ Worldcat: [`649b26e`](https://github.com/augustjanse/jabref/commit/649b26ee289ee
 Worldcat: [`961a20e`](https://github.com/augustjanse/jabref/commit/961a20ec6f15a9d3cf91e1b2e0b09bb244ef6caa)  
 
 For executing the test cases use run following comman: `./gradlew run`.
-
 
 ### Patch/fix
 
@@ -89,6 +99,9 @@ August:
 
 After that I started writing actual code. Organizational and team activities not included.
 
+## the benefits, drawbacks, and limitations of our work carried out
+
+
 ## Some problems we have encountered
 1. The problem with storing the API
 2. When requesting the key from Worldcat, the authority is not instantly delivered/denied.
@@ -102,6 +115,13 @@ We had trouble obtaining a key for the Worldcat Search API. Keys can only be obt
 In the comment section of the issue we made a request to the admins to check if they could provide a sandbox-key for testing, their response was to obtain one by ourselves.
 
 ## Overall experience
+August found an assignment that seemed appropriate. Our issue was a composite issue of many fetcher issues. We aimed to fix both remaining.
+We had no problems with the tool framework, as it was deliberately selected to use Gradle and JUnit as we were used to.
+
+The project seemed welcoming and was well documented. We found, however, that they stored API keys in the code, which was a conundrum for us, wanting to do it the right way.
+Because it was difficult to divide work on one fetcher, we decided to work separately. August did the APS fetcher. He looked at similar classes and wrote together something quickly. Thought it was almost ready. Fixed problems found by tests. Tried to get running in GUI. Didn't work as expected. Found that API doesn't work for these purposes, tried workaround. Found that workaround was case sensitive. Found API is case sensitive as well. Tried to redirect through doi.org. Tried to find redirect link with Unirest. Decided to go with other solution. Tidied up code.
+
+After all that struggle, August sent a pull request which he thought looked pretty good. The maintainer replied with a ton of problems, that were fixed. That was an interesting experience.
 
 What are your main take-aways from this project? What did you learn?
 

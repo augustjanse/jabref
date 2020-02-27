@@ -1,0 +1,205 @@
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes
+> Task :buildSrc:jar
+> Task :buildSrc:assemble
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build
+
+> Configure project :
+Found module name 'org.jabref'
+
+> Task :generateBibtexmlSource
+> Task :generateBstGrammarSource
+> Task :generateEndnoteSource
+> Task :generateMedlineSource
+> Task :generateModsSource
+> Task :generateSearchGrammarSource
+> Task :generateSource
+
+> Task :compileJava
+
+> Task :processResources
+> Task :classes
+
+> Task :compileTestJava
+
+> Task :copyTestResources
+> Task :processTestResources
+> Task :testClasses
+
+> Task :test
+14:42:31.885 [main] INFO  org.gradle.api.internal.tasks.testing.worker.TestWorker - Gradle Test Executor 4 started executing tests. -  
+14:42:39.877 [Test worker] ERROR org.jabref.logic.l10n.Localization - Messages are not initialized before accessing key: keys in library -  
+14:42:43.120 [Test worker] WARN  org.jabref.logic.bst.VM - Warning (#1): empty title in canh05 -  
+14:42:43.121 [Test worker] WARN  org.jabref.logic.bst.VM - Warning (#2): empty journal in canh05 -  
+14:42:43.121 [Test worker] WARN  org.jabref.logic.bst.VM - Warning (#3): empty year in canh05 -  
+14:42:43.287 [Test worker] ERROR org.jabref.logic.bst.VM - ERROR Can only compare two integers with + (1) -  
+
+[0K[1morg.jabref.logic.citationstyle.CitationStyleGeneratorTest[m
+
+[0K[1m  Test [22mtestIgnoreCarriageReturnNewLine()[33m SKIPPED[m
+[0K[1m  Test [22mtestXslFoFormat()[33m SKIPPED[m
+[0K[1m  Test [22mtestRtfFormat()[33m SKIPPED[m
+[0K[1m  Test [22mtestHandleDiacritics()[33m SKIPPED[m
+[0K[1m  Test [22mtestAsciiDocFormat()[33m SKIPPED[m
+[0K[1m  Test [22mtestIgnoreNewLine()[33m SKIPPED[m
+[0K[1m  Test [22mtestTextFormat()[33m SKIPPED[m
+[0K[1m  Test [22mtestMissingCitationStyle()[33m SKIPPED[m
+[0K[1m  Test [22mtestHtmlFormat()[33m SKIPPED[m
+[0K[1m  Test [22mtestHandleAmpersand()[33m SKIPPED[m
+
+[0K[1morg.jabref.logic.citationstyle.CitationStyleTest[m
+
+[0K[1m  Test [22mgetDefault()[33m SKIPPED[m
+[0K[1m  Test [22mtestDefaultCitation()[33m SKIPPED[m
+14:43:21.025 [Test worker] INFO  org.jabref.logic.importer.fileformat.BibtexParser - Found unbracketed comment -  
+14:43:21.126 [Test worker] INFO  org.jabref.logic.importer.fileformat.BibtexParser - Found unbracketed comment -  
+14:43:22.220 [Test worker] WARN  org.jabref.logic.msbib.MSBibDatabase - Could not parse document - org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:261)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.jabref/org.jabref.logic.msbib.MSBibDatabase.importEntriesFromXml(MSBibDatabase.java:75)
+	at org.jabref/org.jabref.logic.importer.fileformat.MsBibImporter.importDatabase(MsBibImporter.java:77) 
+
+[0K[1morg.jabref.logic.layout.format.LatexToUnicodeFormatterTest[m
+
+[0K[1m  Test [22mtestCombiningAccentsCase2()[33m SKIPPED[m
+14:43:34.605 [Test worker] WARN  org.jabref.logic.remote.server.RemoteListenerServerLifecycle - Port is blocked - java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:469)
+	at java.base/sun.nio.ch.Net.bind(Net.java:458)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643) 
+14:43:34.964 [Test worker] WARN  org.jabref.logic.pdf.PdfAnnotationImporter - File 'src/test/resources/pdfs' does not end with .pdf! -  
+14:43:35.063 [Test worker] WARN  org.jabref.logic.pdf.PdfAnnotationImporter - File '/asdf/does/not/exist.pdf' does not exist! -  
+14:43:35.064 [Test worker] WARN  org.jabref.logic.pdf.PdfAnnotationImporter - File 'src/test/resources/pdfs/write-protected.docx' does not end with .pdf! -  
+14:43:35.085 [Test worker] ERROR org.jabref.logic.pdf.PdfAnnotationImporter - Failed to read file 'src/test/resources/pdfs/encrypted.pdf'. - org.apache.pdfbox.pdmodel.encryption.InvalidPasswordException: Cannot decrypt PDF, the password is incorrect
+	at org.apache.pdfbox@2.0.18/org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.prepareForDecryption(StandardSecurityHandler.java:267)
+	at org.apache.pdfbox@2.0.18/org.apache.pdfbox.pdfparser.COSParser.prepareDecryption(COSParser.java:2929)
+	at org.apache.pdfbox@2.0.18/org.apache.pdfbox.pdfparser.COSParser.retrieveTrailer(COSParser.java:286)
+	at org.apache.pdfbox@2.0.18/org.apache.pdfbox.pdfparser.PDFParser.initialParse(PDFParser.java:173) 
+14:43:39.713 [Test worker] INFO  org.jabref.logic.openoffice.StyleLoader - Cannot find external style file DefinitelyNotAValidFileNameOrWeAreExtremelyUnlucky - java.io.FileNotFoundException: DefinitelyNotAValidFileNameOrWeAreExtremelyUnlucky (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at org.jabref/org.jabref.logic.openoffice.OOBibStyle.reload(OOBibStyle.java:235) 
+14:43:39.991 [Test worker] INFO  org.jabref.logic.openoffice.StyleLoader - External style file /home/august/git/jabref/build/resources/main/resource/openoffice/default_authoryear.jstyle already existing. -  
+14:43:40.582 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsLoader - New protected terms resource '/protectedterms/months_weekdays.terms' is available and enabled by default. -  
+14:43:40.583 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsLoader - New protected terms resource '/protectedterms/countries_territories.terms' is available and enabled by default. -  
+14:43:40.583 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsLoader - New protected terms resource '/protectedterms/electrical_engineering.terms' is available and enabled by default. -  
+14:43:40.587 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsLoader - Cannot find protected terms file someUnlikelyNameThatNeverWillExist - java.io.FileNotFoundException: someUnlikelyNameThatNeverWillExist (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75) 
+14:43:40.592 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsList - Problem adding protected term to list - java.nio.file.FileSystemException: /tmp/junit11409483144365330195: Is a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219) 
+14:43:40.632 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsLoader - New protected terms resource '/protectedterms/months_weekdays.terms' is available and enabled by default. -  
+14:43:40.634 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsLoader - New protected terms resource '/protectedterms/countries_territories.terms' is available and enabled by default. -  
+14:43:40.635 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsLoader - New protected terms resource '/protectedterms/electrical_engineering.terms' is available and enabled by default. -  
+14:43:40.645 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsList - Problem adding protected term to list - java.nio.file.FileSystemException: /tmp/junit13905948910123729235: Is a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219) 
+14:43:40.659 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsList - Problem adding protected term to list - java.nio.file.FileSystemException: /tmp/junit11534315915130761156: Is a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219) 
+14:43:40.674 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsList - Problem adding protected term to list - java.nio.file.FileSystemException: /tmp/junit2564290605938858492: Is a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219) 
+14:43:40.679 [Test worker] WARN  org.jabref.logic.protectedterms.ProtectedTermsList - Problem adding protected term to list - java.nio.file.FileSystemException: /tmp/junit5062651938511935762: Is a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219) 
+14:43:40.717 [Test worker] WARN  org.jabref.logic.auxparser.DefaultAuxParser - Problem opening file - java.nio.file.NoSuchFileException: unknownfile.aux
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219) 
+14:43:40.742 [Test worker] WARN  org.jabref.logic.bibtexkeypattern.BracketedPattern - Key generator warning: unknown modifier ''. -  
+14:43:40.744 [Test worker] WARN  org.jabref.logic.bibtexkeypattern.BracketedPattern - Key generator warning: unknown modifier ''. -  
+14:43:40.746 [Test worker] WARN  org.jabref.logic.bibtexkeypattern.BracketedPattern - Missing closing bracket ']' in '[year]_[auth]_[firstpage' -  
+14:43:40.754 [Test worker] WARN  org.jabref.logic.bibtexkeypattern.BracketedPattern - Missing closing bracket ']' in '[year]_[auth_[firstpage]' -  
+14:43:40.763 [Test worker] WARN  org.jabref.logic.bibtexkeypattern.BracketedPattern - Key generator warning: unknown modifier ''. -  
+14:43:40.772 [Test worker] WARN  org.jabref.logic.bibtexkeypattern.BracketedPattern - Key generator warning: unknown modifier ''. -  
+14:43:40.858 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Renaming Files failed - java.nio.file.FileAlreadyExistsException: /tmp/junit1616576030988561030/1/otherExistingTestFile.txt
+	at java.base/sun.nio.fs.UnixCopyFile.move(UnixCopyFile.java:450)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:267)
+	at java.base/java.nio.file.Files.move(Files.java:1425)
+	at org.jabref/org.jabref.logic.util.io.FileUtil.renameFileWithException(FileUtil.java:211) 
+14:43:40.860 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Path to the source file doesn't exist. -  
+14:43:40.877 [Test worker] INFO  org.jabref.logic.util.io.FileUtil - Truncated the too long filename '11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' (260 characters) to '111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'. -  
+14:43:40.880 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Path to the destination file exists but the file shouldn't be replaced. -  
+14:43:40.891 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Path to the destination file exists but the file shouldn't be replaced. -  
+14:43:40.897 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Renaming Files failed - java.nio.file.NoSuchFileException: nonExistingTestPath
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixCopyFile.move(UnixCopyFile.java:430) 
+14:43:40.901 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Path to the source file doesn't exist. -  
+14:43:40.902 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Renaming Files failed - java.nio.file.NoSuchFileException: nonExistingTestPath
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixCopyFile.move(UnixCopyFile.java:430) 
+14:43:40.915 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Path to the source file doesn't exist. -  
+14:43:40.918 [Test worker] INFO  org.jabref.logic.util.io.FileUtil - Truncated the too long filename '11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111.pdf' (264 characters) to '11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'. -  
+14:43:40.924 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Path to the destination file exists but the file shouldn't be replaced. -  
+14:43:40.925 [Test worker] ERROR org.jabref.logic.util.io.FileUtil - Path to the source file doesn't exist. -  
+14:43:40.992 [Test worker] WARN  org.jabref.logic.util.Version - The stage cannot be null -  
+14:43:40.993 [Test worker] WARN  org.jabref.logic.util.Version - Unknown development stage: asdf -  
+14:43:41.011 [Test worker] ERROR org.jabref.logic.texparser.DefaultTexParser - File does not exist: file_not_found.tex -  
+14:43:59.063 [Test worker] INFO  org.jabref.logic.importer.fileformat.BibtexParser - Found unbracketed comment -  
+14:43:59.064 [Test worker] INFO  org.jabref.logic.importer.fileformat.BibtexParser - Found unbracketed comment -  
+14:43:59.183 [Test worker] INFO  org.jabref.logic.importer.fileformat.BibtexParser - Found unbracketed comment -  
+14:43:59.184 [Test worker] INFO  org.jabref.logic.importer.fileformat.BibtexParser - Found unbracketed comment -  
+14:43:59.726 [Test worker] ERROR org.jabref.logic.exporter.BibTeXMLExporter - Could not invoke method setChapter - java.lang.IllegalArgumentException: argument type mismatch
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) 
+
+[0K[1morg.jabref.migrations.MergeReviewIntoCommentActionMigrationTest[m
+
+[0K[1m  Test [22mreviewAndCommentField()[33m SKIPPED[m
+14:43:59.861 [Test worker] INFO  org.jabref.migrations.PreferencesMigrations - migrated old style importFileNamePattern value "\bibtexkey" to new value "[bibtexkey]" in the preference file -  
+14:43:59.862 [Test worker] INFO  org.jabref.migrations.PreferencesMigrations - migrated old style importFileNamePattern value "\bibtexkey" to new value "[bibtexkey]" in the running application -  
+14:43:59.866 [Test worker] INFO  org.jabref.migrations.PreferencesMigrations - migrated old style importFileNamePattern value "\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}" to new value "[bibtexkey] - [title]" in the preference file -  
+14:43:59.866 [Test worker] INFO  org.jabref.migrations.PreferencesMigrations - migrated old style importFileNamePattern value "\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}" to new value "[bibtexkey] - [title]" in the running application -  
+14:44:01.484 [Test worker] WARN  org.jabref.gui.maintable.MainTableColumnModel - Column type author is unknown. -  
+14:44:01.659 [Test worker] WARN  org.jabref.gui.fieldeditors.LinkedFileViewModel - Could not find file nonexistent file -  
+14:44:01.671 [Test worker] WARN  org.jabref.gui.fieldeditors.LinkedFileViewModel - Could not find file !!nonexistent file!! -  
+14:44:03.107 [Test worker] INFO  org.jabref.model.pdf.FileAnnotation - Expected a parseable date string! However, this text could not be parsed: 'gsdfgwergsdf' -  
+14:44:03.185 [Test worker] INFO  org.jabref.model.database.BibDatabase - Stopped due to circular reference in strings: AAA -  
+14:44:03.185 [Test worker] INFO  org.jabref.model.database.BibDatabase - Stopped due to circular reference in strings: BBB -  
+14:44:03.188 [Test worker] INFO  org.jabref.model.database.BibDatabase - Stopped due to circular reference in strings: AAA -  
+14:44:03.188 [Test worker] INFO  org.jabref.model.database.BibDatabase - Stopped due to circular reference in strings: BBB -  
+14:44:03.188 [Test worker] INFO  org.jabref.model.database.BibDatabase - Stopped due to circular reference in strings: CCC -  
+14:44:03.188 [Test worker] INFO  org.jabref.model.database.BibDatabase - Stopped due to circular reference in strings: DDD -  
+14:44:03.530 [main] INFO  org.gradle.api.internal.tasks.testing.worker.TestWorker - Gradle Test Executor 4 finished executing tests. -  
+
+[0K[1;32mSUCCESS: [39mExecuted 5590 tests in 1m 37s (14 skipped)[m
+
+
+> Task :check
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2m 26s
+12 actionable tasks: 12 executed

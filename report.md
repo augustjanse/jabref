@@ -25,7 +25,8 @@ Optional (point 2): relation to design pattern(s).
 
 **Title**: [Wishes for new fetchers](https://github.com/JabRef/jabref/issues/2581)
 
-**Description**: Implement a fetcher that allows for generation of BibTex/Biblatex from Webcat.org based on a URL. 
+**Description**: The issue is a collection of requests for the implementation of fetchers for different platforms. 
+Two of these platforms are American Physical Society (APS) and Worldcat.org. The implemented fetchers should allow for generation of BibTex/Biblatex citations and references.
 
 ### Requirements affected by functionality being refactored
 
@@ -63,6 +64,13 @@ you took care of and where you spent your time, if that time exceeds
 1. The problem with storing the API
 2. When requesting the key from Worldcat, the authority is not instantly delivered/denied.
 3. When we first run the original project using ./gradlew test, the build fails and 9 test cases failed.
+
+
+Problems with Worldcat-fetcher:
+
+We had trouble obtaining a key for the Worldcat Search API. Keys can only be obtained by libraries that maintain Worldcat discovery and/or OCLC Cataloging subscriptions. One of these libraries are the KTH-library, but unfortunetly when we contacted them they couldnt help us with our issue. KTH IT-support was also contacted but couldnt provide any help.
+
+In the comment section of the issue we made a request to the admins to check if they could provide a sandbox-key for testing, their response was to obtain one by ourselves.
 
 ## Overall experience
 

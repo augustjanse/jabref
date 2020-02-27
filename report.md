@@ -8,12 +8,10 @@
 
 ## Onboarding experience
 
-Did it build and run as documented?
-    
-See the assignment for details; if everything works out of the box,
-there is no need to write much here. If the first project(s) you picked
-ended up being unsuitable, you can describe the "onboarding experience"
-for each project, along with reason(s) why you changed to a different one.
+**Did it build and run as documented?**
+
+The application did run correctly without any problems. However there was one test case that failed for the members in our group
+who were using Mac OS Catalina as their operating system. This issue was resolved by ignoring to run the specific test case causing the failure. We did find some documentation regarding the same issue from other contributors to the project, so it does not seem to be unique for our situation.
 
 ## UML class diagram and its description
 
@@ -43,20 +41,31 @@ Optional (point 3): trace tests to requirements.
 The APS fetcher was unit tested to see that it behaves as expected both when finding PDFs and when not (1, 3): https://github.com/JabRef/jabref/pull/6026/files#diff-05a59d2bfd3fd710df528c3327a23e03
 It was then manually tested in the GUI to ensure that it causes no unexpected problems (3).
 
+
 ### Existing test cases relating to refactored code
 
 ### Test results
 
-Overall results with link to a copy or excerpt of the logs (before/after
-refactoring).
+All the implemented test case for the functions are available in the following commits:  
+APS: [`5ba23c7`](https://github.com/augustjanse/jabref/commit/5ba23c741ce1eecad7690a69de1c8c99fefd5206)  
+Worldcat: [`649b26e`](https://github.com/augustjanse/jabref/commit/649b26ee289ee4d197541ebe5a4aa139fbdb49cd)  
+Worldcat: [`961a20e`](https://github.com/augustjanse/jabref/commit/961a20ec6f15a9d3cf91e1b2e0b09bb244ef6caa)  
+
+For executing the test cases use run following comman: `./gradlew run`.
+
 
 ### Patch/fix
 
-The fix can be copied or linked to (git diff).
+The the pull request are available at the following links:  
+[`APS-fetcher`](https://github.com/JabRef/jabref/pull/6026)  
+[`Worldcat-fetcher`](https://github.com/JabRef/jabref/pull/6035)
 
-Optional (point 4): the patch is clean.
+The pull request for APS-fetcher have already received feedback, for which actions have been taken to enable the pull request to get accepted.
 
-Optional (point 5): considered for acceptance (passes all automated checks).
+Unfortunetly feedback has not yet been received regarding the pull request for the Worldcat-fetcher.
+
+We believe that it is likely for the fetchers to be implemented.
+
 
 ## Effort spent
 

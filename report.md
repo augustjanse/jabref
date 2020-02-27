@@ -113,8 +113,6 @@ I use other time to read the documentation of whole project and tried to undeers
 
 Before I could start contributing by coding I had to analyze the existing fetchers and overall code to get an understanding on how it should be implemented and this took quite the time. I found that the project in terms of coding was complex, and therefor it was difficult for me to make any progress. Since the coding was less of an issue for other group members I could distribute my time to other tasks such as documentation and analyzing. 
 
-Optional (point 6): How would you put your work in context with best software engineering practice?
-
 ### The benefits, drawbacks, and limitations of our work carried out
 
 ### Limitations

@@ -7,6 +7,7 @@
 **Description**: JabRef is an open-source, cross-platform citation and reference management tool.
 
 ## Onboarding experience
+August had no problem at all building on his machine. The build does produce a lot of frightening warnings, though.
 
 Did it build and run as documented?
     
@@ -109,6 +110,13 @@ We had trouble obtaining a key for the Worldcat Search API. Keys can only be obt
 In the comment section of the issue we made a request to the admins to check if they could provide a sandbox-key for testing, their response was to obtain one by ourselves.
 
 ## Overall experience
+August found an assignment that seemed appropriate. Our issue was a composite issue of many fetcher issues. We aimed to fix both remaining.
+We had no problems with the tool framework, as it was deliberately selected to use Gradle and JUnit as we were used to.
+
+The project seemed welcoming and was well documented. We found, however, that they stored API keys in the code, which was a conundrum for us, wanting to do it the right way.
+Because it was difficult to divide work on one fetcher, we decided to work separately. August did the APS fetcher. He looked at similar classes and wrote together something quickly. Thought it was almost ready. Fixed problems found by tests. Tried to get running in GUI. Didn't work as expected. Found that API doesn't work for these purposes, tried workaround. Found that workaround was case sensitive. Found API is case sensitive as well. Tried to redirect through doi.org. Tried to find redirect link with Unirest. Decided to go with other solution. Tidied up code.
+
+After all that struggle, August sent a pull request which he thought looked pretty good. The maintainer replied with a ton of problems, that were fixed. That was an interesting experience.
 
 What are your main take-aways from this project? What did you learn?
 

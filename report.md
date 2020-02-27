@@ -46,16 +46,9 @@ It was then manually tested in the GUI to ensure that it causes no unexpected pr
 ### Existing test cases relating to refactored code
 
 ### Test results
-We found that the current test suite is kind of volatile.
 
-The following tests are run on a clean (`git clean -xfd`) repo on the last commit before branching:
-https://github.com/augustjanse/jabref/blob/report/cleaned
-
-They all succeed. When trying the first time on the last commit of the branch, an unrelated test failed:
-https://github.com/augustjanse/jabref/blob/report/aps-cleaned
-
-However, cleaning and running again gave no errors:
-https://github.com/augustjanse/jabref/blob/report/aps-cleaned2
+Overall results with link to a copy or excerpt of the logs (before/after
+refactoring).
 
 ### Patch/fix
 
@@ -72,14 +65,16 @@ Optional (point 5): considered for acceptance (passes all automated checks).
 | Adam  		  | - | - | - | - | - | - | - | - | - |
 | August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 28 |
 | Glenn        	  | - | - | - | - | - | - | - | - | - |
-| Roger 		  | - | - | - | - | - | - | - | - | - |
+| Roger 		  | 1 | 1 | 6 | 4 | 3 | 10 | 0 | 0 | 25 |
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
 30 minutes.
 
 In hours:
+
 August:
+
 1: Trying to get GitHub Actions working for the repo
 1: Look into keys. Realized the way they're doing it is probably breaking terms.
 1: Start looking at APS since Worldcat is being handled. Realized we cannot use any private keys, so implement what can be done without. Tried to find an APS article that cannot be found already, but failed.
@@ -87,7 +82,18 @@ August:
 
 After that I started writing actual code. Organizational and team activities not included.
 
-## the benefits, drawbacks, and limitations of our work carried out
+Roger:
+
+1:Look into the worldcat fetcher and and attempt to get the keys.
+3:Read the code written by teammates to prepare for the documentation and UML diagram drawing
+4:Learning th new knowledge that is unfamiliar to me, such as how to draw the UML diagram, SEMAT kernel and different layers and methods used in developing the fetchers.
+
+I use other time to read the documentation of whole project and tried to undeerstand their approach.Also, I tries to draw a graph for the architecture to make the whole structure of this project more clear and visible. 
+
+## The benefits, drawbacks, and limitations of our work carried out
+
+### benefit
+
 
 
 ## Some problems we have encountered

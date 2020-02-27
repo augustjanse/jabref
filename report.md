@@ -12,7 +12,7 @@ August had no problem at all building on his machine. The build does produce a l
 **Did it build and run as documented?**
 
 The application did run correctly without any problems. However there was one test case that failed for the members in our group
-who were using Mac OS Catalina as their operating system. This issue was resolved by ignoring to run the specific test case causing the failure. We did find some documentation regarding the same issue from other contributors to the project, so it does not seem to be unique for our situation.
+who were using Mac OS Catalina as their operating system. This issue was resolved by ignoring to run the specific test case causing the failure. We did find some documentation regarding the same issue from other contributors to the project, it does not seem to be unique for our situation.
 
 ## UML class diagram and its description
 
@@ -42,77 +42,80 @@ Optional (point 3): trace tests to requirements.
 The APS fetcher was unit tested to see that it behaves as expected both when finding PDFs and when not (1, 3): https://github.com/JabRef/jabref/pull/6026/files#diff-05a59d2bfd3fd710df528c3327a23e03
 It was then manually tested in the GUI to ensure that it causes no unexpected problems (3).
 
-
 ### Existing test cases relating to refactored code
 
 ### Test results
-
-Overall results with link to a copy or excerpt of the logs (before/after
-refactoring).
 
 All the implemented test case for the functions are available in the following commits:  
 APS: [`5ba23c7`](https://github.com/augustjanse/jabref/commit/5ba23c741ce1eecad7690a69de1c8c99fefd5206)  
 Worldcat: [`649b26e`](https://github.com/augustjanse/jabref/commit/649b26ee289ee4d197541ebe5a4aa139fbdb49cd)  
 Worldcat: [`961a20e`](https://github.com/augustjanse/jabref/commit/961a20ec6f15a9d3cf91e1b2e0b09bb244ef6caa)  
 
-For executing the test cases use run following comman: `./gradlew run`.
+To execute the test cases, run the following command: `./gradlew run`.
 
 ### Patch/fix
 
-The the pull request are available at the following links:  
+The pull request are available at the following links:  
 [`APS-fetcher`](https://github.com/JabRef/jabref/pull/6026)  
 [`Worldcat-fetcher`](https://github.com/JabRef/jabref/pull/6035)
 
-The pull request for APS-fetcher have already received feedback, for which actions have been taken to enable the pull request to get accepted.
+The pull request for APS-fetcher have already received feedback, for which actions have been taken to enable the pull request to get accepted. Unfortunetly feedback has not yet been received regarding the pull request for the Worldcat-fetcher.
 
-Unfortunetly feedback has not yet been received regarding the pull request for the Worldcat-fetcher.
-
-We believe that it is likely for the fetchers to be implemented.
+We believe that it is likely for the fetchers to be merged into the master branch.
 
 
 ## Effort spent
 
 |                 | Disc/Meeting | Disc/Meeting within parts of group| Reading documentation | Config/Setup | Analyzing |Writing doc | Coding| Running code | Total |
 |-----------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Adam  		  | - | - | - | - | - | - | - | - | - |
+| Adam  		  | - | 2 | - | - | - | - | - | - | - |
 | August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 28 |
-| Glenn        	  | - | - | - | - | - | - | - | - | - |
+| Glenn        	  | - | 2 | - | - | - | - | - | - | - |
 | Roger 		  | 1 | 1 | 6 | 4 | 3 | 10 | 0 | 0 | 25 |
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
 30 minutes.
 
-In hours:
+Description of time distribution, in hours:
 
-August:
+`August`:
 
-1: Trying to get GitHub Actions working for the repo
-1: Look into keys. Realized the way they're doing it is probably breaking terms.
-1: Start looking at APS since Worldcat is being handled. Realized we cannot use any private keys, so implement what can be done without. Tried to find an APS article that cannot be found already, but failed.
-1: Looking at other FulltextFetchers for APS.
+1: Trying to get GitHub Actions working for the repo  
+1: Look into keys. Realized the way they're doing it is probably breaking terms.  
+1: Start looking at APS since Worldcat is being handled. Realized we cannot use any private keys, so implement what can be done without. Tried to find an APS article that cannot be found already, but failed.  
+1: Looking at other FulltextFetchers for APS.  
 
 After that I started writing actual code. Organizational and team activities not included.
 
-Roger:
+`Roger`:
 
-1:Look into the worldcat fetcher and and attempt to get the keys.
-3:Read the code written by teammates to prepare for the documentation and UML diagram drawing
-4:Learning th new knowledge that is unfamiliar to me, such as how to draw the UML diagram, SEMAT kernel and different layers and methods used in developing the fetchers.
+1:Look into the worldcat fetcher and and attempt to get the keys.  
+3:Read the code written by teammates to prepare for the documentation and UML diagram drawing  
+4:Learning th new knowledge that is unfamiliar to me, such as how to draw the UML diagram, SEMAT kernel and different layers and methods used in developing the fetchers.  
 
 I use other time to read the documentation of whole project and tried to undeerstand their approach.Also, I tries to draw a graph for the architecture to make the whole structure of this project more clear and visible. 
 
+`Adam`:
+
+Before I could start contributing by coding I had to analyze the existing fetchers and overall code to get an understanding on how it should be implemented, this took quite the time. I found that the project in terms of coding was complex, and therefor it was difficult for me to make any progress. Since the coding was less of an issue for other group members I could distribute my time to other tasks such as documentation and analyzing. 
+ 
+`Glenn`:
+
 ## The benefits, drawbacks, and limitations of our work carried out
+
+### limitation
+
+The limitation we experienced was that we all have different educational background, and therefor not equally ... when it comes working on larger open source project. However, this was converted into an advantage for this assignment.
 
 ### benefit
 
-
+We believe that the distribution of our time was well organized for this assignment. The advantage of having members in the group with broader experience when it comes to working on larger open-source projects was utilized well. Every member had a part in making this assignment successfull. We believe that the learning experience of working in a group with different backgrounds have prepared us well for future group assignments, both as students and later as professionals.
 
 ## Some problems we have encountered
 1. The problem with storing the API
 2. When requesting the key from Worldcat, the authority is not instantly delivered/denied.
 3. When we first run the original project using ./gradlew test, the build fails and 9 test cases failed.
-
 
 Problems with Worldcat-fetcher:
 

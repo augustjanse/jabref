@@ -120,13 +120,13 @@ The limitation we experienced was that we all have different educational backgro
 We believe that the distribution of our time was well organized for this assignment. The advantage of having members in the group with broader experience when it comes to working on larger open-source projects was utilized well. Every member had a part in making this assignment successfull. We believe that the learning experience of working in a group with different backgrounds have prepared us well for future group assignments, both as students and later as professionals.
 
 ## Some problems we have encountered
-Problems with Worldcat-fetcher:
+**Problems with Worldcat-fetcher:**
 
 We had trouble obtaining a key for the Worldcat Search API. Keys can only be obtained by libraries that maintain Worldcat discovery and/or OCLC Cataloging subscriptions. One of these libraries are the KTH-library, but unfortunetly when we contacted them they couldnt help us with our issue. KTH IT-support was also contacted but couldnt provide any help.
 
 In the comment section of the issue we made a request to the admins to check if they could provide a sandbox-key for testing, their response was to obtain one by ourselves.
 
-Other problems:
+**Other problems**:  
 One test case failed for some of the group members. However this did now effect our workflow.
 
 ## Overall experience

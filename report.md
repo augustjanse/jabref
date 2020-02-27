@@ -75,8 +75,8 @@ We believe that it is likely for the fetchers to be implemented.
 |                 | Disc/Meeting | Disc/Meeting within parts of group| Reading documentation | Config/Setup | Analyzing |Writing doc | Coding| Running code | Total |
 |-----------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Adam  		  | - | - | - | - | - | - | - | - | - |
-| August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 28 |
-| Glenn        	  | - | - | - | - | - | - | - | - | - |
+| August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 29 |
+| Glenn        	  | 1 | 1 | 3 | 2 | 1 | 2 | 18 | 1 | 29 |
 | Roger 		  | 3 | 1 | 6 | 4 | 3 | 8 | 0 | 0 | 25 |
 
 For setting up tools and libraries (step 4), enumerate all dependencies
@@ -93,6 +93,13 @@ August:
 1: Looking at other FulltextFetchers for APS.
 
 After that I started writing actual code. Organizational and team activities not included.
+
+Glenn:
+
+1: Installing JDK13 and running tests
+1: Looking at Worldcat keys and keys in project
+
+Other than that I spent most time understanding what to write and writing that. A lot of was spent on understanding the system, how everything was connected
 
 Roger:
 
@@ -130,6 +137,8 @@ The project seemed welcoming and was well documented. We found, however, that th
 Because it was difficult to divide work on one fetcher, we decided to work separately. August did the APS fetcher. He looked at similar classes and wrote together something quickly. Thought it was almost ready. Fixed problems found by tests. Tried to get running in GUI. Didn't work as expected. Found that API doesn't work for these purposes, tried workaround. Found that workaround was case sensitive. Found API is case sensitive as well. Tried to redirect through doi.org. Tried to find redirect link with Unirest. Decided to go with other solution. Tidied up code.
 
 After all that struggle, August sent a pull request which he thought looked pretty good. The maintainer replied with a ton of problems, that were fixed. That was an interesting experience.
+
+Glenn has some trouble understanding the purpose of the importers and what was ment to be implemented in them versus the fetchers. He could not find any clear information about the importance of the importer, and when looking at the only other fetcher that only implements the same interface, MrDLibFetcher, its importer parsed the result (as JSON), which is now what WorldcatImporter does. However, he also needed to do make more HTTP request for each result from the main http result (to get more information about the entry, like year and publication) which he was unsure where to place, in the fethcer or the importer. The fetcher felt better because it did HTTP requests to OpenSearch alredy, but the result needed to be parsed first, because each entry in the result XML had a special ID that was needed. Therefor, a design decision was made, and the other requests were done in the importer. As no description was made of the importer, he assumes that is okay.
 
 What are your main take-aways from this project? What did you learn?
 

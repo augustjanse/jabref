@@ -17,7 +17,7 @@ for each project, along with reason(s) why you changed to a different one.
 
 ## UML class diagram and its description
 
-![alt text](https://github.com/txing001/dads111/blob/master/Untitled%20Diagram.jpg)
+![alt text](https://github.com/augustjanse/jabref/blob/report/Untitled%20Diagram.png)
 
 Optional (point 1): Architectural overview.
 

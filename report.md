@@ -63,13 +63,22 @@ Optional (point 5): considered for acceptance (passes all automated checks).
 |                 | Disc/Meeting | Disc/Meeting within parts of group| Reading documentation | Config/Setup | Analyzing |Writing doc | Coding| Running code | Total |
 |-----------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Adam  		  | - | - | - | - | - | - | - | - | - |
-| August          | - | - | - | - | - | - | - | - | - |
+| August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 28 |
 | Glenn        	  | - | - | - | - | - | - | - | - | - |
 | Roger 		  | - | - | - | - | - | - | - | - | - |
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
 30 minutes.
+
+In hours:
+August:
+1: Trying to get GitHub Actions working for the repo
+1: Look into keys. Realized the way they're doing it is probably breaking terms.
+1: Start looking at APS since Worldcat is being handled. Realized we cannot use any private keys, so implement what can be done without. Tried to find an APS article that cannot be found already, but failed.
+1: Looking at other FulltextFetchers for APS.
+
+After that I started writing actual code. Organizational and team activities not included.
 
 ## Some problems we have encountered
 1. The problem with storing the API

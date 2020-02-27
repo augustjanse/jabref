@@ -177,6 +177,6 @@ This would be the members in our dynamic quartet, working on the development of 
 `Way-of-Working: The tailored set of practices and tools used by a team to guide and support their work.`  
 We tailored the difference within our group regarding software development in such sense that every member worked on parts were their qualities were utilized to the fullest. During the development process we continued to communicate within the group to make sure that we had a common goal and way to achieve it.
 
-Optional (point 7): Is there something special you want to mention here?
+### Optional (point 7): Is there something special you want to mention here?
 
 

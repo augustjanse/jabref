@@ -80,7 +80,7 @@ We believe that it is likely for the fetchers to be merged into the master branc
 |-----------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Adam  		  | - | 2 | - | - | - | - | - | - | - |
 | August          | 1 | 1 | 1 | 4 | 1 | 4 | 16 | 1 | 29 |
-| Glenn        	  | 1 | 2 | 3 | 2 | 1 | 2 | 18 | 1 | 30 |
+| Glenn        	  | 1 | 2 | 3 | 2 | 1 | 1 | 16 | 1 | 28 |
 | Roger 		  | 3 | 1 | 6 | 4 | 3 | 8 | 0 | 0 | 25 |
 
 <!-- (For setting up tools and libraries (step 4), enumerate all dependencies you took care of and where you spent your time, if that time exceeds 30 minutes.) -->

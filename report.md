@@ -29,8 +29,17 @@ Optional (point 2): relation to design pattern(s).
 Two of these platforms are American Physical Society (APS) and Worldcat.org. The implemented fetchers should allow for generation of BibTex/Biblatex citations and references.
 
 ### Requirements affected by functionality being refactored
+Our changes are purely expanding existing functionality. Therefore, no API changes are made. Our new classes override existing interfaces. Because of that, the requirements of the public methods are the same as documented for the methods they override. Some high-level requirements on our classes are as following:
+
+1. Finds PDF: The APS fetcher finds a PDF when selecting "Search full text documents online" on an APS entry
+2. Updates entry: The Worldcat fetcher successfully updates an entry with missing info when selecting "Update with bibliographic information from the web"
+3. Fails gracefully: When no info is found, fetchers report so in the appropriate way without failing.
+
+The requirements on the environment that the GUI is properly connected to the logic that calls our classes the proper way. This is assumed to be correctly implemented already.
 
 Optional (point 3): trace tests to requirements.
+The APS fetcher was unit tested to see that it behaves as expected both when finding PDFs and when not (1, 3): https://github.com/JabRef/jabref/pull/6026/files#diff-05a59d2bfd3fd710df528c3327a23e03
+It was then manually tested in the GUI to ensure that it causes no unexpected problems (3).
 
 ### Existing test cases relating to refactored code
 

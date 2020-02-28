@@ -17,7 +17,9 @@ The application did run correctly without any problems. However there was one te
 
 ![alt text](https://github.com/augustjanse/jabref/blob/report/Untitled%20Diagram.png)
 
-Our implemented class `ApsFetcher` implements `FulltextFetcher`. We also add it to a list in [`WebFetchers`](https://github.com/JabRef/jabref/blob/master/src/main/java/org/jabref/logic/importer/WebFetchers.java). The fulltext fetchers are aggregated into `FulltextFetchers`. This class contains the `findFullTextPDF()` method which calls every fetcher in the list. That method is called from `DownloadFullTextAction`, a part of the GUI for when the appropriate button is pushed in the GUI.
+Our implemented class `ApsFetcher` implements `FulltextFetcher`. We also add it to a list in [`WebFetchers`](https://github.com/JabRef/jabref/blob/master/src/main/java/org/jabref/logic/importer/WebFetchers.java), in `getFullTextFetchers()` . The fulltext fetchers are aggregated into `FulltextFetchers`. This class contains the `findFullTextPDF()` method which calls every fetcher in the list. That method is called from `DownloadFullTextAction`, a part of the GUI for when the appropriate button is pushed in the GUI.
+
+`WorldcatFetcher` is also added in `WebFetchers`, but in `getEntryBasedFetchers()`. The entry based fetchers are used in the toolbar for each entry already in the library. When you are editing a bib entry, you can search the Worldcat database, along others, for other entries of the text where more info might be found. So the worldcat fetcher and importer are used by the user through the [`EntryEditor`](src/main/java/org/jabref/gui/entryeditor/EntryEditor.java) class, as it is calling `getFullTextFetchers()` to add the fetchers to the list. When clicking the item then calls functions in the Worldcat Fetcher.
 
 Optional (point 1): Architectural overview.
 We compiled an overview available [here](https://github.com/augustjanse/jabref/blob/report/architecture%20documentation.md).

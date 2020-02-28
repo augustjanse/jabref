@@ -18,6 +18,7 @@ The application did run correctly without any problems. However there was one te
 ![alt text](https://github.com/augustjanse/jabref/blob/report/Untitled%20Diagram.png)
 
 Optional (point 1): Architectural overview.
+We compiled an overview available [here](https://github.com/augustjanse/jabref/blob/report/architecture%20documentation.md).
 
 Optional (point 2): relation to design pattern(s).
 
